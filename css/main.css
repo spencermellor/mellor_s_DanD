@@ -36,11 +36,27 @@ body {
 
 /* arrange the puzzle pieces on the board */
 
+.tl, .bl {text-align: right;}
+.tr img {bottom: 0;}
+.tl img {bottom: 0;}
+.bl img {right: 0;}
 
+.drop-zone img {
+	width: auto !important;
+	padding: 0 !important;
+	cursor: pointer;
+	position: absolute;
+}
 
 /* set up drop zones */
 
-
+.drop-zone {
+	width: 49.5%;
+	height: 49.5%;
+	border: thin dashed white;
+	float: right;
+	position: relative;
+}
 
 /* end board styles */
 
@@ -59,10 +75,10 @@ header h1 {
 	margin: 10px 0
 }
 
-header p, footer p { 
-	font-size: 1.7em; 
-	letter-spacing: 2px; 
-	margin: 10px 0 
+header p, footer p {
+	font-size: 1.7em;
+	letter-spacing: 2px;
+	margin: 10px 0
 }
 
 footer {
